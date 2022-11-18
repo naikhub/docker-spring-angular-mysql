@@ -38,7 +38,7 @@ pipeline {
         stage('docker-compose-build') {
             steps {
                 sh 'rm -rf *'
-                sh 'cd docker-spring-angular-mysql; ls -lrta; docker-compose up --build --remove-orphans -d'
+                sh 'cd docker-spring-angular-mysql/docker; ls -lrta; docker-compose up --build --remove-orphans -d'
                 sh 'sudo docker-compose ps'
             }
         }
