@@ -2,7 +2,7 @@
 
 #### This is a sample project how to use Angular with Spring Boot using Docker.
 
-sh ```
+```sh
 Code Checkout:
 git clone https://github.com/naikhub/docker-spring-angular-mysql.git
 cd docker-spring-angular-mysql/docker
