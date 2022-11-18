@@ -48,10 +48,10 @@ pipeline {
                 sh 'sudo docker images'
                 sh 'sudo docker tag angular ramubanavath/angular:v1'
                 sh 'sudo docker tag spring-boot ramubanavath/spring-boot:v1'
-                sh 'sudo docker tag db ramubanavath/db:v1'
+                sh 'sudo docker tag db ramubanavath/mysql:v1'
                 sh 'sudo docker push ramubanavath/angular:v1'
                 sh 'sudo docker push ramubanavath/spring-boot:v1'
-                sh 'sudo docker push ramubanavath/db:v1'
+                sh 'sudo docker push ramubanavath/mysql:v1'
                 sh 'sudo docker images'
             }
         }
